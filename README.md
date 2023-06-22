@@ -1,5 +1,3 @@
-# Final Capstone
+# Music Suggestor App
 ​
-This directory contains all of the starter projects for the final capstone.
-​
-Each project contains instructions that provides information about the starting code and explains how to get started with the final capstone project.
+Full-stack application that recommends a song to the user based on the genre selected, developed using Java and Vue.js. Includes use of Relational Databases, Spring Boot, PostgreSQL, and Postman. 
