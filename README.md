@@ -2,7 +2,7 @@
 ​
 Full-stack application that recommends a song to the user based on the genre selected, developed using Java and Vue.js. Includes use of Relational Databases, Spring Boot, PostgreSQL, and Postman. 
 
-Database
+# Database
 Inside the <project-root>/database/ directory, you'll find an executable Bash script (.sh file) and several SQL scripts (.sql files). These can be used to build and rebuild a PostgreSQL database for the capstone project.
 
 From a terminal session, execute the following commands:
@@ -13,7 +13,7 @@ This Bash script drops the existing database, if necessary, creates a new databa
 
 Each SQL script has a specific purpose as described here:
 
-File Name	Description
+# File Name	# Description
 data.sql	This script populates the database with any static setup data or test/demo data. The project team should modify this script.
 dropdb.sql	This script destroys the database so that it can be recreated. It drops the database and associated users. The project team shouldn't have to modify this script.
 schema.sql	This script creates all of the database objects, such as tables and sequences. The project team should modify this script.
