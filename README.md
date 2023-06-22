@@ -33,5 +33,3 @@ final_capstone_appuser	The application uses this user to make connections to the
 
 # Spring Boot
 Note: Spring Boot has been configured to run on port 9000 for this project. You might be used to port 8080 from earlier in the cohort, but it's changed so as not to conflict with the Vue server that you'll be running concurrently.
-
-Datasource
