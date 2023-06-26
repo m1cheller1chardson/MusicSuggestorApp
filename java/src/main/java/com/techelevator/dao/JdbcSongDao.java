@@ -2,6 +2,7 @@ package com.techelevator.dao;
 
 import com.techelevator.exception.DaoException;
 import com.techelevator.model.Song;
+import org.springframework.dao.DataAccessException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.BadSqlGrammarException;
 import org.springframework.jdbc.CannotGetJdbcConnectionException;
@@ -60,12 +61,39 @@ public class JdbcSongDao implements SongDao {
 
     @Override
     public Song createSong(Song song, int songId) {
-        return null;
+        String sql = "INSERT INTO song (artist, title, album, genre, year) " +
+                "VALUES (?,?,?,?,?) RETURNING song_id";
+        Song newSong = null;
+        try{
+            int newSongId = jdbcTemplate.queryForObject(sql, int.class, song.getArtist(), song.getTitle(), song.getAlbum(), song.getGenre(), song.getYear());
+            newSong = getSongDetailsById(newSongId);
+        } catch (CannotGetJdbcConnectionException e) {
+            throw new DaoException("Unable to connect to server or database", e);
+        } catch (BadSqlGrammarException e) {
+            throw new DaoException("SQL syntax error", e);
+        } catch (DataIntegrityViolationException e) {
+            throw new DaoException("Data integrity violation", e);
+        }
+        return newSong;
     }
 
     @Override
     public Song updateSong(Song song, int songId) {
-        return null;
+        Song updatedSong = new Song();
+        String sql = "UPDATE song SET " +
+                "artist = ?, title = ?, album = ?, genre = ?, year = ?;";
+        try{
+            jdbcTemplate.update(sql, song.getArtist(), song.getTitle(), song.getAlbum(), song.getGenre(), song.getYear());
+        }  catch (DataAccessException e) {
+            throw new DaoException("Error updating song.", e);
+        }
+        return updatedSong;
+    }
+
+    @Override
+    public void deleteSong(int songId) {
+        String sql = "DELETE FROM song WHERE song_id = ?;";
+        jdbcTemplate.update(sql, songId);
     }
 
     private Song mapRowToSong(SqlRowSet rs){

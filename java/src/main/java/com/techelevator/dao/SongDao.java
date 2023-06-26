@@ -13,4 +13,6 @@ public interface SongDao {
 
     Song updateSong(Song song, int songId);
 
+    void deleteSong(int songId);
+
 }
