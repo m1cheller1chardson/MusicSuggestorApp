@@ -1,6 +1,6 @@
 # Music Suggestor App
 ​
-Full-stack application that recommends a song to the user based on the genre selected, developed using Java and Vue.js. Includes use of Relational Databases, Spring Boot, PostgreSQL, and Postman. 
+Full-stack application that recommends a song to the user based on the genre selected, developed using Java and Vue.js. Includes use of Relational Databases, Spring Boot, PostgreSQL, Postman, and the Spotify API. Currently in development.
 
 # Database
 Inside the <project-root>/database/ directory, you'll find an executable Bash script (.sh file) and several SQL scripts (.sql files). These can be used to build and rebuild a PostgreSQL database for the capstone project.
