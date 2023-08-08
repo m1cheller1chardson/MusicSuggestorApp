@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <div class="box-1" id="box" label="my-songs">
+    <div class="box1" id="box" label="my-songs">
       <h2>My Songs</h2>
       <h3>Genre:
         <select name="genre" class="genre">Genre
@@ -21,16 +21,18 @@
       <h4>Album</h4>
       <h4>Year</h4>
     </div>
-    <div class="box-2" id="box" label="discover-music">
+    <div class="box2" id="box" label="discover-music">
       <h2>Discover New Music</h2>
-      <button>Rock</button>
-      <button>Hip-Hop</button>
-      <button>Jazz</button>
-      <button>Electronic</button>
+      <button class="genre-btn">Rock</button> &nbsp;
+      <button class="genre-btn">Hip-Hop</button><br>
+      <button class="genre-btn">Jazz</button> &nbsp;
+      <button class="genre-btn">Electronic</button><br>
+      <button class="genre-btn">Country</button> &nbsp;
+      <button class="genre-btn">Classical</button><br>
+      <button class="">Pop</button> &nbsp;
+      <button class="">Folk</button><br>
+      <button class="">Musical Theatre</button> &nbsp;
     </div>
-
-
-
   </div>
 </template>
 
@@ -40,8 +42,6 @@ export default {
 };
 </script>
 
-<style>
-* {
-  position: center
-}
+<style scoped>
+
 </style>

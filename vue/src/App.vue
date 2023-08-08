@@ -11,6 +11,8 @@
 <style>
 * {
   background-color: #ACD5E6;
+  font-family: Arial;
+  font-style: normal;
 }
 
 .btn {
@@ -26,5 +28,33 @@
   text-decoration: none;
 }
 
+.purp-btn {
+  background-color: #B39BC8;
+}
+
+.box1 {
+  border: 2px solid #669bb7;
+  background-color: #B39BC8;
+  justify-content: center;
+  height: 97%;
+  width: 97%;
+}
+
+.box2 {
+  border: 2px solid #669bb7;
+  background-color: #e64398;
+  height: 97%;
+  width: 97%;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "box1" 
+    "box2";
+  place-items: center;
+}
 </style>
 
