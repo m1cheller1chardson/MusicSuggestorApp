@@ -9,6 +9,24 @@
 </template>
 
 <style>
+
+/* HEADERS */
+.my-songs-header {
+  background-color: #B39BC8;
+}
+
+.discover-header {
+  background-color: #e64398;
+}
+
+h3 {
+  background-color: #B39BC8;
+}
+
+h4 {
+  background-color: #B39BC8;
+}
+
 * {
   background-color: #ACD5E6;
   font-family: Arial;
@@ -28,6 +46,10 @@
 .home-btn {
   color: white;
   text-decoration: none;
+}
+
+#genre-dropdown {
+  background-color: #F172a1;
 }
 
 /* CONTAINERS */
@@ -64,6 +86,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: #e64398;
   
 }
 
