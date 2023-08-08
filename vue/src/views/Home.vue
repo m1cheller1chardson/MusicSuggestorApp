@@ -23,15 +23,17 @@
     </div>
     <div class="box2" id="box" label="discover-music">
       <h2>Discover New Music</h2>
-      <button class="genre-btn">Rock</button> &nbsp;
-      <button class="genre-btn">Hip-Hop</button><br>
-      <button class="genre-btn">Jazz</button> &nbsp;
-      <button class="genre-btn">Electronic</button><br>
-      <button class="genre-btn">Country</button> &nbsp;
-      <button class="genre-btn">Classical</button><br>
-      <button class="">Pop</button> &nbsp;
-      <button class="">Folk</button><br>
-      <button class="">Musical Theatre</button> &nbsp;
+      <div class="genre-container">
+        <button class="genre-btn">Rock</button>
+        <button class="genre-btn">Hip-Hop</button>
+        <button class="genre-btn">Jazz</button>
+        <button class="genre-btn">Electronic</button>
+        <button class="genre-btn">Country</button>
+        <button class="genre-btn">Classical</button>
+        <button class="genre-btn">Pop</button>
+        <button class="genre-btn">Folk</button>
+        <button class="genre-btn">Musical Theatre</button>
+      </div>
     </div>
   </div>
 </template>

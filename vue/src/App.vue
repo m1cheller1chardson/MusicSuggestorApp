@@ -13,8 +13,10 @@
   background-color: #ACD5E6;
   font-family: Arial;
   font-style: normal;
+  color: #F0EBF4;
 }
 
+/* BUTTONS */
 .btn {
   color: white;
   background-color: black;
@@ -28,13 +30,11 @@
   text-decoration: none;
 }
 
-.purp-btn {
-  background-color: #B39BC8;
-}
-
+/* CONTAINERS */
 .box1 {
   border: 2px solid #669bb7;
   background-color: #B39BC8;
+  color: #F0EBF4;
   justify-content: center;
   height: 97%;
   width: 97%;
@@ -43,8 +43,28 @@
 .box2 {
   border: 2px solid #669bb7;
   background-color: #e64398;
+  color: #F0EBF4;
   height: 97%;
   width: 97%;
+}
+
+/* GENRE BUTTONS */
+.genre-btn {
+  display: flex;
+  justify-content: space-between;
+  background-color: #B39BC8;
+  width: 95%;
+  padding: 20px 100px 40px 30px;
+  margin: 10px 5px;
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.genre-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
 }
 
 .home {
