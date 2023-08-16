@@ -19,12 +19,19 @@
   background-color: #e64398;
 }
 
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
 h3 {
   background-color: #B39BC8;
+  margin-left: 40px;
 }
 
 h4 {
   background-color: #B39BC8;
+  margin-left: 55px;
 }
 
 * {
@@ -50,9 +57,25 @@ h4 {
 
 #genre-dropdown {
   background-color: #F172a1;
+  border-radius: 5px;
+}
+
+.genre-btn {
+  background-color: #B39BC8;
+  width: 95%;
+  padding: 50px 30px 50px 30px;
+  /* margin: 10px 10px; */
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  
 }
 
 /* CONTAINERS */
+#box {
+  border-radius: 10px;
+}
+
 .box1 {
   border: 2px solid #669bb7;
   background-color: #B39BC8;
@@ -66,20 +89,9 @@ h4 {
   border: 2px solid #669bb7;
   background-color: #e64398;
   color: #F0EBF4;
-  height: 97%;
+  margin-top: 25px;
+  height: 100%;
   width: 97%;
-}
-
-/* GENRE BUTTONS */
-.genre-btn {
-  display: flex;
-  justify-content: space-between;
-  background-color: #B39BC8;
-  width: 95%;
-  padding: 20px 100px 40px 30px;
-  margin: 10px 5px;
-  text-align: center;
-  vertical-align: text-top;
 }
 
 .genre-container {
@@ -87,7 +99,9 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: #e64398;
-  
+  padding: 0px 10px 0px 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
 }
 
 .home {
@@ -99,5 +113,6 @@ h4 {
     "box2";
   place-items: center;
 }
+
 </style>
 

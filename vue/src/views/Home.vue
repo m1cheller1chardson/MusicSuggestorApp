@@ -16,10 +16,10 @@
           <option value="musical-theatre" id="genre-dropdown">Musical Theatre</option>
         </select>
       </h3>
-      <h4>Artist</h4>
-      <h4>Title</h4>
-      <h4>Album</h4>
-      <h4>Year</h4>
+      <h4>Artist:</h4>
+      <h4>Title:</h4>
+      <h4>Album:</h4>
+      <h4>Year:</h4>
     </div>
     <div class="box2" id="box" label="discover-music">
       <h2 class="discover-header">Discover New Music</h2>
