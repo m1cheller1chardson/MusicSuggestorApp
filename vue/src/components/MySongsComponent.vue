@@ -6,7 +6,7 @@
                 <option value="rock" id="genre-dropdown">Rock</option>
                 <option value="hip-hop" id="genre-dropdown">Hip-Hop</option>
                 <option value="jazz" id="genre-dropdown">Jazz</option>
-                <option value="electric" id="genre-dropdown">Electric</option>
+                <option value="electronic" id="genre-dropdown">Electronic</option>
                 <option value="country" id="genre-dropdown">Country</option>
                 <option value="classical" id="genre-dropdown">Classical</option>
                 <option value="pop" id="genre-dropdown">Pop</option>

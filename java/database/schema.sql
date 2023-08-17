@@ -24,7 +24,7 @@ CREATE TABLE user_songs (
     song_id INTEGER,
     favorited BOOLEAN,
     date DATE,
-    PRIMARY KEY (user_id, cookout_id),
+    PRIMARY KEY (user_id, song_id),
     CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(user_id),
     CONSTRAINT fk_song_id FOREIGN KEY (song_id) REFERENCES songs(song_id)
 );
