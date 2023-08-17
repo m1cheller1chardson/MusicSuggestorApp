@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <my-songs-component></my-songs-component>
-    <discover-new-music-component></discover-new-music-component>
+    <my-songs-component/>
+    <discover-new-music-component/>
     
   </div>
 </template>
