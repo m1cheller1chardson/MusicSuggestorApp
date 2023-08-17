@@ -9,14 +9,13 @@
 </template>
 
 <style>
-
 /* HEADERS */
 .my-songs-header {
-  background-color: #B39BC8;
+  background-color: #757047;
 }
 
 .discover-header {
-  background-color: #e64398;
+  background-color: #C5A491;
 }
 
 h2 {
@@ -25,17 +24,18 @@ h2 {
 }
 
 h3 {
-  background-color: #B39BC8;
+  background-color: #757047;
   margin-left: 40px;
 }
 
 h4 {
-  background-color: #B39BC8;
+  background-color: #757047;
   margin-left: 55px;
+  margin-bottom: 60p
 }
 
 * {
-  background-color: #ACD5E6;
+  background-color: #D5D9D8;
   font-family: Arial;
   font-style: normal;
   color: #F0EBF4;
@@ -56,38 +56,38 @@ h4 {
 }
 
 #genre-dropdown {
-  background-color: #F172a1;
+  background-color: #B6B19E;
   border-radius: 5px;
+  margin-left: 75px;
 }
 
 .genre-btn {
-  background-color: #B39BC8;
+  background-color: #B6B19E;
+  border-color: white;
   width: 95%;
   padding: 50px 30px 50px 30px;
   /* margin: 10px 10px; */
   border-radius: 10px;
   text-align: center;
   vertical-align: middle;
-  
+
 }
 
 /* CONTAINERS */
-#box {
+.my-songs {
+  border: 2px solid #B6B19E;
   border-radius: 10px;
-}
-
-.box1 {
-  border: 2px solid #669bb7;
-  background-color: #B39BC8;
+  background-color: #757047;
   color: #F0EBF4;
   justify-content: center;
   height: 97%;
   width: 97%;
 }
 
-.box2 {
-  border: 2px solid #669bb7;
-  background-color: #e64398;
+.discover-music {
+  border: 2px solid #F0E3D2;
+  border-radius: 10px;
+  background-color: #C5A491;
   color: #F0EBF4;
   margin-top: 25px;
   height: 100%;
@@ -98,7 +98,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #e64398;
+  background-color: #C5A491;
   padding: 0px 10px 0px 10px;
   grid-row-gap: 10px;
   justify-items: center;
@@ -109,10 +109,9 @@ h4 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-    "box1" 
+    "box1"
     "box2";
   place-items: center;
 }
-
 </style>
 
