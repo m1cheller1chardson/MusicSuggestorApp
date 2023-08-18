@@ -2,6 +2,7 @@
     <div class="my-songs">
         <h2 class="my-songs-header">My Songs</h2>
         <h3>Genre:
+            <!-- Dynamically search My Songs by genre -->
             <select name="genre" id="genre-dropdown">Genre
                 <option value="rock" id="genre-dropdown">Rock</option>
                 <option value="hip-hop" id="genre-dropdown">Hip-Hop</option>
@@ -14,10 +15,10 @@
                 <option value="musical-theatre" id="genre-dropdown">Musical Theatre</option>
             </select>
         </h3>
-        <h4>Artist:</h4>
-        <h4>Title:</h4>
-        <h4>Album:</h4>
-        <h4>Year:</h4>
+        <h4>Artist: {{ song.artist }}</h4>
+        <h4>Title: {{ song.title }}</h4>
+        <h4>Album: {{ song.album }}</h4>
+        <h4>Year: {{ song.year }}</h4>
     </div>
 </template>
 
@@ -26,7 +27,8 @@ export default {
     name: "mySongs",
     data() {
         return {
-            newSong: {
+            favorited: false,
+            song: {
                 genre: '',
                 artist: '',
                 title: '',
